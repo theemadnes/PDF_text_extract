@@ -3,7 +3,7 @@ from __future__ import print_function
 import json
 import urllib
 import boto3
-import slate
+import slate # using a specific version of PDFminer due to incompatibilities of certain versions
 import elasticsearch
 
 elasticsearch_endpoint = ''
