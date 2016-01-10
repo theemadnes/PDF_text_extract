@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README
+setup.cfg
+setup.py
+src/slate/__init__.py
+src/slate/conftest.py
+src/slate/slate.py
+src/slate/test_slate.py
+src/slate/utils.py
+src/slate.egg-info/PKG-INFO
+src/slate.egg-info/SOURCES.txt
+src/slate.egg-info/dependency_links.txt
+src/slate.egg-info/requires.txt
+src/slate.egg-info/top_level.txt

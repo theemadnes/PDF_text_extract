@@ -1,0 +1,73 @@
+Metadata-Version: 1.1
+Name: slate
+Version: 0.3
+Summary: Extract text from PDF documents easily.
+Home-page: http://github.com/timClicks/slate
+Author: Tim McNamara
+Author-email: paperless@timmcnamara.co.nz
+License: GPL v3 or later
+Description: ======================================================
+        slate: the easiest way to get text from PDFs in Python
+        ======================================================
+        
+        
+        Slate is a Python package that simplifies the process of extracting
+        text from PDF files. It depends on the PDFMiner package.
+        
+        Slate provides one class, PDF. PDF takes a file-like object and
+        will extract all text from the document, presentating each page
+        as a string of text:
+        
+          >>> with open('example.pdf') as f:
+          ...    doc = slate.PDF(f)
+          ...
+          >>> doc 
+          [..., ..., ...]
+          >>> doc[1]
+          'Text from page 2...'
+        
+        If your pdf is password protected, pass the password as the
+        second argument:
+        
+          >>> with open('secrets.pdf') as f:
+          ...     doc = slate.PDF(f, 'password')
+          ...
+          >>> doc[0]
+          "My mother doesn't know this, but..."
+        
+        More complex operations
+        -----------------------
+        
+        If you would like access to the images, font files and other
+        information, then take some time to learn the PDFMiner API.
+        
+        
+        What is wrong with PDFMiner?
+        ----------------------------
+        
+          1. Getting simple things done, like extracting the text
+             is quite complex. The program is not designed to return
+             Python objects, which makes interfacing things irritating.
+          2. It's an extremely complete set of tools, with multiple 
+             and moderately  steep learning curves.
+          3. It's not written with hackability in mind.
+        
+        
+        GPL?
+        ----
+        
+        If you would like to use this software in a non-free manner,
+        please contact the copyright owner.
+        
+Keywords: pdf,text,text-extraction
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires: pdfminer

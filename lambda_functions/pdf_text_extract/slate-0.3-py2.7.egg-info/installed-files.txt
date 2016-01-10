@@ -1,0 +1,16 @@
+../slate/__init__.py
+../slate/conftest.py
+../slate/slate.py
+../slate/test_slate.py
+../slate/utils.py
+../slate/__init__.pyc
+../slate/conftest.pyc
+../slate/slate.pyc
+../slate/test_slate.pyc
+../slate/utils.pyc
+./
+dependency_links.txt
+PKG-INFO
+requires.txt
+SOURCES.txt
+top_level.txt
