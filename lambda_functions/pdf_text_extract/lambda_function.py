@@ -36,6 +36,7 @@ def lambda_handler(event, context):
         temp_pdf_file.close() # close the temporary file for now
 
         # pull the text from the temporary PDF file using slate
+        print("Extracting data from: " + object_key)
         with open('/tmp/tempfile.pdf') as temp_pdf_file:
 
             doc = slate.PDF(temp_pdf_file)
@@ -58,3 +59,5 @@ def lambda_handler(event, context):
     except Exception as e:
         print('Data post to ES failed: ' + str(e))
         raise e   
+
+    return "Done"
